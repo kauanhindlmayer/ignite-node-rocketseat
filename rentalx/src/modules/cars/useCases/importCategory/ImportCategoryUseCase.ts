@@ -20,6 +20,8 @@ class ImportCategoryUseCase {
 
       stream.pipe(parseFile);
 
+      console.log("teste");
+
       parseFile
         .on("data", async (line) => {
           const [name, description] = line;
