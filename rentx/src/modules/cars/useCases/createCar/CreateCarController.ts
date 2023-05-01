@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { container } from "tsyringe";
 import { CreateCarUseCase } from "./CreateCarUseCase";
 
-class CreateClassController {
+class CreateCarController {
   async handle(request: Request, response: Response): Promise<Response> {
     const {
       name,
@@ -30,4 +30,4 @@ class CreateClassController {
   }
 }
 
-export { CreateClassController };
+export { CreateCarController };
