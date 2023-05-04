@@ -9,7 +9,7 @@ import swaggerFile from "../../../swagger.json";
 import "@shared/container";
 import { AppError } from "@shared/errors/AppError";
 
-import createConnection from "@shared/infra/typeorm";
+import { createConnection } from "typeorm";
 createConnection();
 
 const app = express();
